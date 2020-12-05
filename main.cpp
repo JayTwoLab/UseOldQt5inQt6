@@ -20,12 +20,12 @@ int main(int argc, char *argv[])
     qDebug() << sref;
 
 #if QT_VERSION_MAJOR == 6
-    // ccustom code for Qt 6 or higer version
+    // custom code for Qt 6 or higer version
    qDebug() << "six";
 #endif
 
 #if QT_VERSION_MAJOR == 5
-    // ccustom code for Qt 5
+    // custom code for Qt 5
    qDebug() << "five";
 #endif
 

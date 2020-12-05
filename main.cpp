@@ -2,6 +2,7 @@
 
 #include <QtGlobal>
 #include <QString>
+#include <QDebug>
 #include <QCoreApplication>
 
 /////////////////////////
@@ -17,6 +18,20 @@ int main(int argc, char *argv[])
     // Old Qt5 code.
     QStringRef sref( &qstr );
     qDebug() << sref;
+
+#if QT_VERSION_MAJOR == 6
+    // ccustom code for Qt 6 or higer version
+   qDebug() << "six";
+#endif
+
+#if QT_VERSION_MAJOR == 5
+    // ccustom code for Qt 5
+   qDebug() << "five";
+#endif
+
+#if QT_VERSION_MAJOR == 4
+   // ? Are you still in use?
+#endif
 
     return 0; // return a.exec();
 }

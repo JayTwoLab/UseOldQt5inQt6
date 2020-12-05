@@ -1,10 +1,12 @@
 // main.cpp
 
-#include <QtCore5Compat> /// TODO: append this header for old Qt5 code.
-
 #include <QtGlobal>
 #include <QString>
 #include <QCoreApplication>
+
+/////////////////////////
+#include <QtCore5Compat> /// TODO: append this header for old Qt5 code.
+/////////////////////////
 
 int main(int argc, char *argv[])
 {

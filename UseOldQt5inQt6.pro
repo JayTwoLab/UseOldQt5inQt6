@@ -1,4 +1,3 @@
-
 # UseOldQt5inQt6.pro
 
 message( 'Qt major version : ' $$QT_MAJOR_VERSION ) # test in Qt6.
@@ -10,7 +9,8 @@ QT += core5compat
 
 QT -= gui
 
-CONFIG += c++11 console
+CONFIG += c++11
+CONFIG += console
 CONFIG -= app_bundle
 
 # You can make your code fail to compile if it uses deprecated APIs.
